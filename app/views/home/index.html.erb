@@ -10,4 +10,9 @@
     Focus more on teaching and less on administrative tasks with LessonTrack.
 </p>
 
-<button>Login</button>
+<% if user_signed_in? %> 
+ <div> Welcome <%= current_user.email %> </div> 
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+<% else %>
+  <%= button_to "Sign in", new_user_session_path %> 
+<% end %>
