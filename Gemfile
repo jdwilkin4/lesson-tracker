@@ -33,6 +33,7 @@ gem "bootsnap", require: false
 
 gem "devise" 
 
+gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'dotenv-rails', groups: [:development, :test]
 
