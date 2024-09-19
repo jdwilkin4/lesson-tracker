@@ -1,18 +1,16 @@
 <h1>Welcome to Lesson Tracker</h1>
-
 <p>
-    LessonTrack revolutionizes the way music teachers manage their private lessons. 
+  LessonTrack revolutionizes the way music teachers manage their private lessons. 
 </p>
 <p>
-    Seamlessly monitor student progress, send payment reminders, and store valuable resources like sheet music—all in one intuitive app. 
+  Seamlessly monitor student progress, send payment reminders, and store valuable resources like sheet music—all in one intuitive app. 
 </p>
-<p> 
-    Focus more on teaching and less on administrative tasks with LessonTrack.
+<p>
+  Focus more on teaching and less on administrative tasks with LessonTrack.
 </p>
-
-<% if user_signed_in? %> 
- <div> Welcome <%= current_user.email %> </div> 
-  <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+<% if user_signed_in? %>
+  <p> Welcome <%= current_user.email %> </p>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
 <% else %>
-  <%= button_to "Sign in", new_user_session_path, method: :get %> 
+  <%= link_to "Sign in", new_user_session_path %>
 <% end %>

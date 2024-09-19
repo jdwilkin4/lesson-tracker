@@ -31,13 +31,13 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-gem "devise" 
+gem "devise"
 
-gem 'omniauth'
-gem 'omniauth-google-oauth2'
-gem 'dotenv-rails', groups: [:development, :test]
+gem "omniauth"
+gem "omniauth-google-oauth2"
+gem "dotenv-rails", groups: [ :development, :test ]
 
-gem 'htmlbeautifier'
+gem "htmlbeautifier"
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
@@ -59,7 +59,7 @@ group :development do
   gem "web-console"
 
   # Highlight the fine-grained location where an error occurred [https://github.com/ruby/error_highlight]
-  gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
 end
 
 group :test do
